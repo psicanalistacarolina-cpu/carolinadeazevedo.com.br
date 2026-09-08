@@ -11,6 +11,8 @@
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://psicarolinadeazevedo.com.br/">
+<link rel="canonical" href="https://psicarolinadeazevedo.com.br/">
 <meta property="og:title" content="Carolina de Azevedo | Psicanalista Online">
 <meta property="og:description" content="Atendimento psicanalítico online, com abordagem inspirada em Sándor Ferenczi. Agende uma primeira conversa.">
 
@@ -451,3 +453,4 @@
 
 </body>
 </html>
+
