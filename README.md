@@ -7,6 +7,7 @@
 <meta name="description" content="Carolina de Azevedo é psicanalista, com atendimento exclusivamente online e abordagem inspirada em Sándor Ferenczi. Agende uma primeira conversa.">
 <meta name="keywords" content="psicanalista online, psicanálise online, terapia online, Sándor Ferenczi, análise online, Carolina de Azevedo, CEP Centro de Estudos Psicanalíticos">
 <meta name="author" content="Carolina de Azevedo">
+<meta name="color-scheme" content="light">
 <meta name="robots" content="index, follow">
 
 <meta property="og:type" content="website">
@@ -22,21 +23,22 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --parchment: #F4F1E8;
-    --parchment-deep: #EAE5D7;
-    --ink: #1E1C19;
-    --ink-soft: #58554D;
-    --gray: #DAD6CC;
-    --gray-deep: #A6A199;
+    color-scheme: light;
+    --parchment: #F2E9D6;
+    --parchment-deep: #E8DBBE;
+    --ink: #3B342B;
+    --ink-soft: #675F52;
+    --gray: #DDD3BC;
+    --gray-deep: #A69C87;
     --wood: #7C4F30;
     --wood-deep: #55371F;
     --yellow: #E7B72E;
-    --line: rgba(30,28,25,0.15);
-    --serif: 'Fraunces', serif;
-    --sans: 'Karla', sans-serif;
+    --line: rgba(59,52,43,0.16);
+    --serif: 'Lora', serif;
+    --sans: 'Nunito', sans-serif;
   }
 
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -149,12 +151,13 @@
     padding: 13px 26px;
     border-radius: 4px;
     text-decoration:none;
+    font-family: var(--sans);
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 700;
     transition: transform .15s ease, background .2s ease;
   }
   .btn-primary{
-    background: var(--ink);
+    background: var(--wood);
     color: var(--parchment);
   }
   .btn-primary:hover{ background: var(--wood-deep); transform: translateY(-1px); }
@@ -222,6 +225,12 @@
     font-family: var(--serif);
     font-size: 2.6rem;
     color: var(--wood-deep);
+    overflow: hidden;
+  }
+  .portrait img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .credential{
     margin-top: 22px;
@@ -297,16 +306,16 @@
 
   /* ---------- CONTACT ---------- */
   .contact-card{
-    background: var(--ink);
-    color: var(--parchment);
+    background: var(--gray);
+    color: var(--ink);
     border-radius: 4px;
     padding: 48px 40px;
     position: relative;
     overflow: hidden;
-    border: 1px solid var(--wood-deep);
+    border: 1px solid var(--line);
   }
-  .contact-card h2{ color: var(--parchment); }
-  .contact-card p{ color: rgba(244,241,232,0.78); max-width: 50ch; margin-bottom: 30px; }
+  .contact-card h2{ color: var(--ink); }
+  .contact-card p{ color: var(--ink-soft); max-width: 50ch; margin-bottom: 30px; }
   .contact-methods{
     display:flex;
     flex-direction: column;
@@ -315,7 +324,7 @@
   .contact-methods a{
     text-decoration:none;
     font-weight: 600;
-    color: var(--parchment);
+    color: var(--wood-deep);
     border-bottom: 1.5px solid var(--yellow);
     width: fit-content;
     padding-bottom: 2px;
@@ -323,6 +332,39 @@
 
   @media (max-width: 560px){
     .contact-card{ padding: 36px 24px; }
+  }
+
+  .symptom-intro{
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    max-width: 56ch;
+    margin-bottom: 30px;
+  }
+  .chip-grid{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .chip{
+    display:inline-flex;
+    align-items:center;
+    gap: 8px;
+    padding: 9px 18px;
+    border: 2px solid var(--yellow);
+    border-radius: 999px;
+    font-family: var(--serif);
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--wood-deep);
+    background: var(--parchment);
+  }
+  .symptom-note{
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--wood-deep);
+    max-width: 42ch;
   }
 
   footer{
@@ -342,6 +384,7 @@
   <nav class="wrap">
     <div class="brand">Carolina de Azevedo</div>
     <div class="navlinks">
+      <a href="#quando-buscar">Por que procurar</a>
       <a href="#sobre">Sobre</a>
       <a href="#atendimento">Atendimento</a>
       <a href="#artigos">Artigos</a>
@@ -361,13 +404,32 @@
     <circle cx="5" cy="5" r="5" fill="#E7B72E"/>
   </svg>
   <div class="wrap">
-    <h1>Um espaço de escuta para o que ainda não encontrou palavras.</h1>
+    <h1>Espaço de escuta para o que ainda não encontrou palavras.</h1>
     <div class="role">Psicanálise — atendimento online</div>
-    <p class="lede">Carolina de Azevedo recebe, pelo formato online, processos de análise inspirados na obra de Sándor Ferenczi — onde o vínculo entre analista e paciente é, em si, parte do tratamento.</p>
+    <p class="lede">Recebo, online, quem sente que algo pede escuta — em processos inspirados em Ferenczi, onde vínculo entre analista e paciente já é, em si, parte de cuidado.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#contato">Agendar uma conversa</a>
+      <a class="btn btn-primary" href="https://wa.me/5511964068930" target="_blank" rel="noopener">Agende um horário</a>
       <a class="btn btn-ghost" href="#sobre">Conhecer a abordagem</a>
     </div>
+  </div>
+</section>
+
+<section id="quando-buscar">
+  <div class="wrap">
+    <div class="eyebrow">Por que procurar análise</div>
+    <h2>Você não precisa estar "muito mal" pra começar</h2>
+    <p class="symptom-intro">Muita gente só pensa em análise quando já não aguenta mais. Mas dá pra procurar bem antes disso — quando algo insiste em incomodar, mesmo sem hora marcada pra piorar. Alguns sinais comuns de quem chega até mim:</p>
+    <div class="chip-grid">
+      <span class="chip">Ansiedade</span>
+      <span class="chip">Depressão</span>
+      <span class="chip">Insônia</span>
+      <span class="chip">Crises de choro</span>
+      <span class="chip">Sensação de vazio</span>
+      <span class="chip">Repetir os mesmos padrões</span>
+      <span class="chip">Dificuldade nos relacionamentos</span>
+      <span class="chip">Luto</span>
+    </div>
+    <p class="symptom-note">Se alguma dessas palavras te tocou, talvez já seja motivo suficiente pra gente conversar.</p>
   </div>
 </section>
 
@@ -376,10 +438,10 @@
     <div class="eyebrow">Sobre mim</div>
     <h2>Uma escuta que leva o vínculo a sério</h2>
     <div class="about-grid">
-      <div class="portrait">CA</div>
+      <div class="portrait"><img src="carolina-foto.jpeg" alt="Carolina de Azevedo, psicanalista"></div>
       <div class="about-text">
-        <p>Sou Carolina de Azevedo, psicanalista, e recebo meus pacientes exclusivamente em atendimento online. Depois de anos em consultório físico, decidi levar o trabalho para esse novo formato — e percebi que a qualidade do encontro não depende das paredes, e sim da presença de quem escuta.</p>
-        <p>Ao longo da formação, estudei os teóricos que dão base à psicanálise — e foi na obra de Sándor Ferenczi que me reconheci de verdade. Para ele, a relação entre analista e paciente não é um pano de fundo neutro, mas parte viva do processo. Isso significa que, no meu consultório, a técnica não substitui o cuidado: ambos caminham juntos.</p>
+        <p>Sou Carolina de Azevedo, psicanalista. Atuo exclusivamente online e, depois de anos em consultório físico, percebi que qualidade de encontro não depende de paredes, e sim de presença de quem escuta.</p>
+        <p>Ao longo de formação, estudei teóricos que dão base a psicanálise — e foi em obra de Sándor Ferenczi que me reconheci de verdade. Para ele, relação entre analista e paciente não é pano de fundo neutro, mas parte viva de processo. Isso significa que, em meu consultório, técnica não substitui cuidado: ambos caminham juntos.</p>
         <p>Trabalho com adultos que buscam entender repetições, sintomas ou mal-estares que insistem em voltar — e que desconfiam, com razão, de respostas prontas.</p>
         <div class="credential">Formação pelo CEP — Centro de Estudos Psicanalíticos</div>
       </div>
@@ -394,19 +456,19 @@
     <div class="service-list">
       <div class="service-item">
         <h3>Sessões individuais</h3>
-        <p>Atendimento por videochamada, em plataforma segura, com a mesma regularidade e sigilo de um setting presencial.</p>
+        <p>Atendo por videochamada, em plataforma segura, com mesma regularidade e sigilo de setting presencial.</p>
       </div>
       <div class="service-item">
         <h3>Frequência</h3>
-        <p>Combinada caso a caso — a maioria dos processos começa semanal, podendo se ajustar conforme a necessidade do trabalho.</p>
+        <p>Combino caso a caso — maioria de processos começa semanal, podendo se ajustar conforme necessidade de trabalho.</p>
       </div>
       <div class="service-item">
         <h3>Primeira conversa</h3>
-        <p>Um encontro inicial para você apresentar o que te trouxe até aqui e entendermos juntas se faz sentido seguir.</p>
+        <p>Encontro inicial para você apresentar o que te trouxe até aqui e entendermos juntos se faz sentido seguir.</p>
       </div>
       <div class="service-item">
-        <h3>Duração da sessão</h3>
-        <p>50 minutos, no horário combinado entre nós, respeitando seu fuso e sua rotina.</p>
+        <h3>Duração de sessão</h3>
+        <p>50 minutos, em horário combinado entre nós, respeitando seu fuso e sua rotina.</p>
       </div>
     </div>
   </div>
@@ -418,15 +480,15 @@
     <h2>Escritos sobre clínica e escuta</h2>
     <div class="post-list">
       <a class="post" href="#">
-        <span class="post-title">O valor da ternura na escuta clínica</span>
+        <span class="post-title">Valor de ternura em escuta clínica</span>
         <span class="post-meta">Clínica</span>
       </a>
       <a class="post" href="#">
-        <span class="post-title">Trauma e reparação: um olhar a partir de Ferenczi</span>
+        <span class="post-title">Trauma e reparação: olhar a partir de Ferenczi</span>
         <span class="post-meta">Teoria</span>
       </a>
       <a class="post" href="#">
-        <span class="post-title">Análise online: o vínculo também atravessa a tela</span>
+        <span class="post-title">Análise online: vínculo também atravessa tela</span>
         <span class="post-meta">Atendimento online</span>
       </a>
     </div>
@@ -437,7 +499,7 @@
   <div class="wrap">
     <div class="contact-card">
       <h2>Vamos conversar</h2>
-      <p>Se algo do que você leu aqui ressoou, o próximo passo é simples: escreva ou chame no WhatsApp para combinarmos um primeiro horário.</p>
+      <p>Se algo do que você leu aqui ressoou, próximo passo é simples: escreva ou chame no WhatsApp para combinarmos primeiro horário.</p>
       <div class="contact-methods">
         <a href="mailto:psicanalista.carolina@gmail.com">psicanalista.carolina@gmail.com</a>
         <a href="https://wa.me/5511964068930" target="_blank" rel="noopener">WhatsApp — (11) 96406-8930</a>
@@ -453,4 +515,3 @@
 
 </body>
 </html>
-
