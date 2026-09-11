@@ -739,17 +739,19 @@
         <div class="cards">
 
 
-          <article class="card">
+          <a href="delicadeza-na-escuta.html" style="text-decoration: none;">
+            <article class="card">
 
-            <h3>
-              O valor da delicadeza na escuta clínica
-            </h3>
+              <h3>
+                O valor da delicadeza na escuta clínica
+              </h3>
 
-            <p>
-              Em breve
-            </p>
+              <p>
+                Sobre a delicadeza como ética e técnica na escuta psicanalítica.
+              </p>
 
-          </article>
+            </article>
+          </a>
 
 
           <article class="card">
