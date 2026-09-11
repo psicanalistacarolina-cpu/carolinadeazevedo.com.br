@@ -189,15 +189,6 @@
       font-family: "DM Serif Display", serif;
       font-size: 1.28rem;
       line-height: 1.45;
-      position: relative;
-      padding-left: 22px;
-    }
-
-    .hero-note::before {
-      content: "—";
-      position: absolute;
-      left: 0;
-      color: var(--gold);
     }
 
     .photo-frame {
@@ -224,7 +215,7 @@
 
     .two-columns {
       display: grid;
-      grid-template-columns: 1fr 0.72fr;
+      grid-template-columns: 0.72fr 1fr;
       gap: 64px;
       align-items: center;
     }
@@ -253,12 +244,6 @@
       font-family: "DM Serif Display", serif;
       font-size: clamp(1.35rem, 2.5vw, 1.7rem);
       line-height: 1.45;
-    }
-
-    .highlight::before {
-      content: "—";
-      color: var(--gold);
-      margin-right: 10px;
     }
 
     .career {
@@ -300,10 +285,6 @@
       color: var(--brown);
       font-size: 0.95rem;
       line-height: 1.35;
-    }
-
-    .reason::before {
-      content: "";
     }
 
     .closing {
@@ -452,7 +433,7 @@
         <div>
 
           <div class="eyebrow">
-            Psicanálise — atendimento online
+            Psicanálise: atendimento online
           </div>
 
           <h1>
@@ -461,7 +442,7 @@
 
           <p class="lead">
             Às vezes, alguma coisa começa a pesar, se repetir ou simplesmente
-            deixar de fazer sentido — mesmo quando, por fora, parece estar tudo bem.
+            deixar de fazer sentido, mesmo quando, por fora, parece estar tudo bem.
           </p>
 
           <div class="buttons">
@@ -543,6 +524,14 @@
 
       <div class="container two-columns">
 
+        <div class="photo-frame small-photo">
+
+          <img src="carolina-foto-2.jpeg"
+               alt="Carolina de Azevedo em seu espaço de escuta">
+
+        </div>
+
+
         <div>
 
           <p class="eyebrow">
@@ -575,7 +564,7 @@
 
           <p>
             <strong>
-              Formação em Psicanálise pelo CEP — Centro de Estudos Psicanalíticos.
+              Formação em Psicanálise pelo CEP, Centro de Estudos Psicanalíticos.
             </strong>
           </p>
 
@@ -611,14 +600,6 @@
             Hoje, dedico-me ao atendimento psicanalítico de adultos,
             exclusivamente online.
           </p>
-
-        </div>
-
-
-        <div class="photo-frame small-photo">
-
-          <img src="carolina-foto-2.jpeg"
-               alt="Carolina de Azevedo em seu espaço de escuta">
 
         </div>
 
@@ -787,7 +768,7 @@
           <article class="card">
 
             <h3>
-              O que muda — e o que não muda — na análise online
+              O que muda e o que não muda na análise online
             </h3>
 
             <p>
@@ -844,7 +825,7 @@
 
     <div class="container">
 
-      Carolina de Azevedo — Psicanalista<br>
+      Carolina de Azevedo · Psicanalista<br>
       Atendimento exclusivamente online.
 
     </div>
